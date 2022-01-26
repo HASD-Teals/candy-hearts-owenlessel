@@ -14,10 +14,7 @@ public class HeartsClient {
     }
     public static int buyOut(Heart[] Store){
         int temp=0;
-        for(int i=0;i<Store.length;i++){
-            temp = temp + Store[i].length;
-        }
-       
+        
         
 
 
