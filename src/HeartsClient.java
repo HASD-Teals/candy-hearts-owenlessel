@@ -10,15 +10,21 @@ public class HeartsClient {
             System.out.println(Store[i].report());
             System.out.println();
         }
-    
+        buyOut(Store);
+        
     }
     public static int buyOut(Heart[] Store){
-        int temp=0;
+        int numHearts=0;
+        for(int i=0;i<Store.length;i++){
+            numHearts=numHearts+Store[i].getStock();
+        }
         
-        
 
 
 
-        return temp;
+        return numHearts;
+    }
+    public static void adjStock(Heart[] Store,int numHearts){
+        numHearts=2;
     }
 }
