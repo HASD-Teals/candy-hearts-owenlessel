@@ -6,12 +6,12 @@ public class Heart {
     private boolean available;
     private int stock;
     private int size;
-    private String[] sayings;
+    private String sayings;
 
     // CONSTRUCTORS
     public Heart() {} // This is the default contructor
     //Add overloaded Constructor here...
-    public Heart(String color,int calories,double costPerPound,boolean available,int stock,int size,String[] sayings){
+    public Heart(String color,int calories,double costPerPound,boolean available,int stock,int size,String sayings){
         this.color=color;
         this.costPerPound=costPerPound;
         this.stock=stock;
@@ -27,7 +27,7 @@ public class Heart {
     public int getSize(){
         return this.size;
     }
-    public String[] getSayings(){
+    public String getSayings(){
         return this.sayings;
     }
     public int getCalories(){
@@ -54,7 +54,10 @@ public class Heart {
         this.costPerPound=costPerPound*increase;
     }
     public void inStock(int stock){
-        
+        stock=this.stock;
+        if(stock>0){
+            available=true;
+        }
     }
 
     // METHODS
