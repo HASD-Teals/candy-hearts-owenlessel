@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class HeartsClient {
     public static void main(String[] args) throws Exception {
         String[] sayings = { "Hi", "Love CS-A", "Go Girl!" };
